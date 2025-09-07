@@ -1,0 +1,179 @@
+.hidden{
+    display: none;
+}
+@media (max-width: 480px) {
+    /* Header and Hero Section */
+    .container{
+        padding: 50px 15px;
+    }
+    
+    header > *{
+        margin: 0;
+        padding: 0;
+    }
+    .logo a img{
+        width: 100%;
+        max-width: 300px;
+    }
+    .nav-items, .menu-btn{
+        display: none;
+    }
+    .hero-container, .btn{
+        flex-direction: column;
+    }
+    .hero-content h1.heading, .about-section h2.heading{
+        font-size: 2rem;
+    }
+    .hero-content h1.heading, .hero-content p, .school-section .school-text h2, .school-section .school-text p, .school-image, .school-image img, .about-image, .about-image img, .hero-image, .studying-section h2.heading{
+        width: 100%;
+    }
+    .hero-container{
+        height: auto;
+    }
+    
+
+    /* About Section */
+.about-section{
+    flex-direction: column;
+    align-items: start;
+}
+
+
+/* School Section */
+
+.school-section{
+    align-items: center;
+    text-align: center;
+    flex-direction: column-reverse;
+}
+
+/* Studding section */
+
+.cards{
+    grid-template-columns: repeat(1, 1fr);
+}
+
+/* Newsletter Section */
+
+
+.newsletter {
+        height: 450px;
+    }
+  
+    .newsletter h2{
+        font-size: 2rem;
+    }
+  
+    .newsletter .content{
+        padding: 15px;
+    }
+  
+    .newsletter .btn {
+      font-size: 0.9rem;
+    }
+
+/* footer section */
+.footer{
+    grid-template-columns: repeat(1, 1fr);
+}
+
+
+}
+
+ @media (min-width: 481px) and (max-width: 768px){
+    .nav-items{
+        display: none;
+    }
+    header > *{
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Hero Section */
+    .hero-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .hero-content h1.heading, .hero-content p, .school-section .school-text h2, .school-section .school-text p, .school-image, .school-image img, .about-image, .about-image img, .hero-image, .studying-section h2.heading{
+        width: 100%;
+    }
+    .hero-image{
+        width: 70%;
+    }
+
+    /* About Section */
+    .about-section {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .about-image img {
+        width: 65%;
+    }
+
+    /* School Section */
+
+        .school-section {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .school-image img{
+        width: 80%;
+    }
+
+    /* Studying Section */
+
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 15px;
+    }
+
+    /* Newsletter Section */
+    .content h2{
+        font-size: 2rem;
+    }
+
+    /* footer section */
+    .footer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+ }
+
+ @media (min-width: 769px) and (max-width: 1024px){
+    .hero-image, .school-image img, .school-section .school-text h2, .hero-content, .hero-content h1.heading, .hero-content p{
+        width: 100%;
+    }
+    
+
+    .hero-container{
+        height: auto;
+    }
+
+    .about-info{
+        width: 50%;
+    }
+    .about-image img{
+        width: 90%;
+    }
+
+    /* School Section */
+    .school-text{
+        width: 50%;
+    }
+    .school-image{
+        width: 50%;
+    }
+
+    
+
+    .footer, .cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+     
+  
+
+ }
